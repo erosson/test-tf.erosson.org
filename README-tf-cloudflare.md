@@ -1,6 +1,6 @@
 Static site and Github repo managed by Evan's Opentofu (Terraform) infrastructure.
 
-* This repository's `.tf` configuration: https://github.com/erosson/infra/tree/main/tf/
+* This repository's `.tf` configuration: https://github.com/erosson/infra/tree/main/tf/test-tf.erosson.org
 * Public site: https://test-tf.erosson.org
 * Backend site: https://test-tf-erosson-org.pages.dev
 * Deployment status: https://dash.cloudflare.com/fed1bc67ffb2f62c6deaa5c7f8f9eb93/pages/view/test-tf-erosson-org
