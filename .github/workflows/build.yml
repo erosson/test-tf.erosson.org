@@ -16,5 +16,5 @@ jobs:
       - run: |
           git config --global user.name "erosson-infra@erosson.org"
           git config --global user.name "erosson/infra"
-          curl -sSL https://raw.githubusercontent.com/erosson/infra/main/tf/modules/git-release-branch | bash -s -- . main.release
+          curl -sSL https://raw.githubusercontent.com/erosson/infra/main/tf/modules/git-release-branch | bash -s -- ./public main.release
           git push origin main.release
