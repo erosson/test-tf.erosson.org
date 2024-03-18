@@ -1,0 +1,17 @@
+name: "example build"
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      # pass arguments to a script fetched by curl
+      - run: curl -sSL https://raw.githubusercontent.com/erosson/infra/main/tf/modules/git-release-branch | bash -s -- . main.release
+      - run: git push origin main.release
